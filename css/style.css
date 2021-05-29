@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: roboto, sans-serif;
+    font-size: 16px;
+    line-height: normal;
+    font-style: normal;
+    min-height: 100vh;
+}
+a{
+    text-decoration-line: none;
+    color: inherit;
+}
+.container{
+    max-width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.container.header__container{
+    margin: 20px auto;
+}
+.header__logo-img{
+    width: 125px;
+    height: 125px;
+    object-fit: contain;
+    cursor: pointer;
+}
+.header__title{
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.header__title a{
+    color: #222;
+    text-decoration-line: none;
+}
+.s1{
+    display: none;
+}
+.s2,
+.s3,
+.s4{
+    display: block;
+    padding: 25px 0;
+}
+.s2__title,
+.s3__title,
+.s4__title{
+    font-size: 30px;
+    line-height: normal;
+    font-weight: 400;
+    margin-bottom: 15px;
+    text-align: center;
+    cursor: default;
+}
+.s2__link,
+.s3__link,
+.s4__link{
+    background-color: #000;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 8px 0;
+    color: #fff;
+    font-size: 16px;
+    line-height: normal;
+    text-decoration-line: none;
+    width: 100%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60px;
+    transition: all 0.2s ease;
+}
+.s3__link div p:first-child{
+    margin-bottom: 8px;
+}
+.s2__link:hover,
+.s3__link:hover,
+.s4__link:hover{
+    background-color: #363636;
+    transform: scale(1.01);
+}
+.footer{
+    padding: 35px 0 28px;
+}
+.footer__signature{
+    text-align: center;
+    color: rgb(2, 2, 2);
+    text-decoration-line: none;
+    font-weight: normal;
+}
+.link__span{
+    font-size: 14px;
+    color: rgb(171 171 171);
+}
+.link__svg-img{
+    position: absolute;
+    top: auto;
+    bottom: auto;
+    left: 12px;
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+}
+.link__svg-img.whatsapp-logo{
+    width: 30px;
+    height: 30px;
+    left: 19px;
+}
+.link__svg-img.social-logo{
+    width: 32px;
+    height: 32px;
+    left: 19px;
+}
