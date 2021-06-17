@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
-    font-family: roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: normal;
     font-style: normal;
@@ -20,6 +22,7 @@ a{
     line-height: normal;
     margin-top: 30px;
     text-align: center;
+    animation-duration: 1s;
 }
 .container{
     max-width: 90vw;
@@ -158,6 +161,9 @@ a{
 .toTopBtn:hover{
     background-color: rgb(36, 36, 36);
 }
+.toTopBtn{
+    display: none;
+}
 #progress-container{
     position: fixed;
     top: 0;
@@ -177,6 +183,91 @@ a{
     transition: all 300ms linear;
     /*border-right: 3px solid #fff;*/
     box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.7);
+}
+.map__container{
+    display: block;
+    width: 100%;
+    position: relative;
+    padding-top: 100%;
+    border-radius: 8px;
+    margin: 10px 0 35px;
+    overflow: hidden;
+}
+#map{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+.map-page__title:not(:first-child){
+    margin-top: 40px;
+}
+.info__container{
+    text-align: center;
+    font-style: normal;
+}
+.info__container address,
+.info__container p{
+    font-style: normal;
+    margin-bottom: 5px;
+}
+
+/* <slider styles> */
+.splide{
+    margin-bottom: 60px;
+}
+.slide__content-wrapper{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: zoom-in;
+}
+.slide__content-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: zoom-in;
+}
+.splide__pagination{
+    top: 105%;
+}
+.splide__pagination__page{
+    border: 0.2px solid #000;
+    background-color: #fff;
+    width: 15px;
+    height: 15px;
+    margin: 8px;
+}
+.splide__pagination__page.is-active{
+    background-color: #000;
+    opacity: 1;
+}
+.slide__content-lightbox{
+    text-decoration: none;
+    color: inherit;
+    cursor: zoom-in;
+}
+.splide__arrow{
+    opacity: 1;
+    background: #fff;
+    border: .2px solid #000;
+}
+.splide__arrow--next{
+    right: -10px;
+}
+.splide__arrow--prev{
+    left: -10px;
+}
+/* </slider styles> */
+
+@media screen and (min-width:991px){
+    .map__container{
+        padding-top: 56.25%;
+    }
 }
 @media screen and (max-width:320px){
     .s2__link div:nth-child(2){
