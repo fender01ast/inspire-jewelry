@@ -39,7 +39,6 @@ document.addEventListener("DOMContentLoaded", function(){
             focus       : 'center',
             width       : '100%',
             height      : '320px',
-            //trimSpace   : true,
             pagination  : true,
             arrows      : true,
             autoplay    : true,
@@ -50,7 +49,6 @@ document.addEventListener("DOMContentLoaded", function(){
             breakpoints : {
                 767: {
                     perPage  : 1,
-                    //gap      : '10px',
                     height   : '225px',
                 },
                 991: {
@@ -80,7 +78,6 @@ document.addEventListener("DOMContentLoaded", function(){
             focus       : 'center',
             width       : '100%',
             height      : '320px',
-            //trimSpace   : true,
             pagination  : true,
             arrows      : true,
             autoplay    : true,
@@ -91,7 +88,6 @@ document.addEventListener("DOMContentLoaded", function(){
             breakpoints : {
                 767: {
                     perPage  : 1,
-                    //gap      : '10px',
                     height   : '225px',
                 },
                 991: {
