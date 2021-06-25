@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function(){
             breakpoints : {
                 767: {
                     perPage  : 1,
-                    height   : '225px',
+                    height   : '320px',
                 },
                 991: {
                     perPage  : 2,
@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function(){
             breakpoints : {
                 767: {
                     perPage  : 1,
-                    height   : '225px',
+                    height   : '320px',
                 },
                 991: {
                     perPage  : 2,
@@ -108,4 +108,8 @@ document.addEventListener("DOMContentLoaded", function(){
             DG.marker([51.164572, 71.44242]).addTo(map).bindPopup('Inspire Jewelry Alma-Ata');
         });
     }
+
+    $('.arrow-back__wrapper').click(function(){
+        window.history.back();
+    });
 });
