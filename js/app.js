@@ -1,6 +1,11 @@
+function detectIEEdge() {
+    var ua = window.navigator.userAgent;
+    console.log(ua);
+}
+
 document.addEventListener("DOMContentLoaded", function(){
     new WOW().init();
-
+    
     let currentYear = new Date().getFullYear();
     document.getElementById('year-now').innerHTML = currentYear;
 
