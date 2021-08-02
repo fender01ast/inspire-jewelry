@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/splide.min.css" />
     <link rel="stylesheet" href="css/animate.min.css" />
     <link rel="stylesheet"  href="css/lightbox.min.css" />
-    <link rel="stylesheet" href="css/style.css?ver=1.0.5" />
+    <link rel="stylesheet" href="css/style.css?ver=1.0.6" />
 </head>
 <body>
 <header class="header" id="header">
@@ -47,7 +47,7 @@
                             <div class="slide__content-wrapper">
                                 <a href="images/mega-2.JPG" class="slide__content-lightbox" data-lightbox="mega">
                                     <picture>
-                                        <source srcset="images/mega-2.webp" type="image/webp">
+                                        <source srcset="images/mega-2_447.webp 447w, images/mega-2_901.webp 901w, images/mega-2.webp 1920w" type="image/webp">
                                         <img src="images/mega-2.JPG" alt="placeholder img" class="slide__content-img mega-2">
                                     </picture>
                                     <!--<img data-splide-lazy="images/mega-2.JPG" alt="placeholder img" class="slide__content-img mega-2">-->
@@ -111,18 +111,22 @@
 <script src="js/wow.min.js"></script>
 <script src="js/lightbox.min.js"></script>
 <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
-<script src="js/app.js?ver=1.0.5"></script>
+<script src="js/app.js?ver=1.0.6"></script>
 <!-- Yandex.Metrika counter -->
 <script>
-    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
- 
-    ym(80470294, "init", {
-         clickmap:true,
-         trackLinks:true,
-         accurateTrackBounce:true,
-         webvisor:true
+    document.addEventListener('DOMContentLoaded', function(){
+        setTimeout(function(){
+            (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+        
+            ym(80470294, "init", {
+                clickmap:true,
+                trackLinks:true,
+                accurateTrackBounce:true,
+                webvisor:true
+            });
+        },1000);
     });
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/80470294" style="position:absolute; left:-9999px;" alt="" /></div></noscript>

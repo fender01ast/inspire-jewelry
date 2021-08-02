@@ -63,16 +63,20 @@ document.addEventListener("DOMContentLoaded", function(){
         } ).mount();
         /* </slider mega> */
 
-        var map;
-        DG.then(function () {
-            map = DG.map('map', {
-                center: [51.089758, 71.407374],
-                zoom: 16
-            });
+        /* <2gis map init> */
+        setTimeout(function(){
+            var map;
+            DG.then(function () {
+                map = DG.map('map', {
+                    center: [51.089758, 71.407374],
+                    zoom: 16
+                });
 
-            DG.marker([51.089581, 71.406209]).addTo(map).bindPopup('Inspire Jewelry Mega Silkway');
-            DG.marker([51.164572, 71.44242]).addTo(map).bindPopup('Inspire Jewelry Alma-Ata');
-        });
+                DG.marker([51.089581, 71.406209]).addTo(map).bindPopup('Inspire Jewelry Mega Silkway');
+                DG.marker([51.164572, 71.44242]).addTo(map).bindPopup('Inspire Jewelry Alma-Ata');
+            });
+        },3000);
+        /* </2gis map init> */
     }
 
     if (document.location.pathname.indexOf('/alma-ata.html') >= 0) {    // если страница === алма-ата
@@ -102,16 +106,20 @@ document.addEventListener("DOMContentLoaded", function(){
         } ).mount();
         /* </slider alma-ata> */
 
-        var map;
-        DG.then(function () {
-            map = DG.map('map', {
-                center: [51.164246, 71.441412],
-                zoom: 16
-            });
+        /* <2gis map init> */
+        setTimeout(function(){
+            var map;
+            DG.then(function () {
+                map = DG.map('map', {
+                    center: [51.164246, 71.441412],
+                    zoom: 16
+                });
 
-            DG.marker([51.089581, 71.406209]).addTo(map).bindPopup('Inspire Jewelry Mega Silkway');
-            DG.marker([51.164572, 71.44242]).addTo(map).bindPopup('Inspire Jewelry Alma-Ata');
-        });
+                DG.marker([51.089581, 71.406209]).addTo(map).bindPopup('Inspire Jewelry Mega Silkway');
+                DG.marker([51.164572, 71.44242]).addTo(map).bindPopup('Inspire Jewelry Alma-Ata');
+            });
+        },3000);
+        /* </2gis map init> */
     }
 
     $('.arrow-back__wrapper').click(function(){
