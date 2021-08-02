@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function(){
     document.getElementById('year-now').innerHTML = currentYear;
 
     document.querySelector('.header__logo-img').addEventListener('click', function(){
-        window.open('index.html');
+        document.location.href = "index.html";
     });
 
     let $page = $('html, body');
