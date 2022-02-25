@@ -313,6 +313,11 @@ a{
         padding-top: 56.25%;
     }
 }
+@media screen and (max-width:767px) {
+    #mega_title{
+        font-size: 13px;
+    }
+}
 @media screen and (max-width:320px){
     .s2__link div:nth-child(2){
         max-width: 65%;
